@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.divStyle, div {
+  margin: 0;
+}
+
+.overlay {
+  background: rgba(30,30,31, 0.7 );
+  filter: grayscale(80%);
+  background-blend-mode: color multiply;
+  mix-blend-mode: unset;
+  z-index: 0;
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+.SearchBar{
+  position: relative;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.SearchBar input, button {
+  padding: 8px;
+  font-size: 1.25em;
+}
+
+.SearchBar button {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.25em;
+}
+
+.MovieInfo {
+  font-family: 'Helvetica';
+  position: relative;
+  z-index: 5;
+  margin-left: 4.5em;
+  width: 50%;
+  height: 75%;
+  color: white;
+}
+
+.MovieInfo h1 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 3.5em;
+  color: #f1c40f;
+}
+
+.MovieInfo p {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.4em;
+  letter-spacing: 1.15;
+  line-height: 1.55em;
+}
